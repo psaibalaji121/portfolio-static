@@ -348,6 +348,19 @@
             transform: translateY(-3px);
         }
 
+        /* Stats Section */
+#achievements .stats-card {
+    max-width: 100%;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#achievements .stats-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+
 
     </style>
 </head>
@@ -654,6 +667,30 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
 
+            <!-- Hackathon Participation Certificate -->
+<div class="card shadow-sm mb-4">
+  <div class="row g-0 align-items-center">
+    <!-- Logo -->
+    <div class="col-md-2 text-center">
+      <img src="https://logo.clearbit.com/opsecsecurity.com" class="img-fluid p-3" alt="OpSec Logo">
+    </div>
+    <!-- Content -->
+    <div class="col-md-10">
+      <div class="card-body">
+        <h5 class="mb-1">Hackathon Participation Certificate</h5>
+        <small class="text-muted">Sep 2024</small>
+        <p class="card-text">Recognized for participation in a coding hackathon conducted by OpSec Security.</p>
+        <a href="PDF/hackathon.pdf" target="_blank" 
+           class="btn btn-outline-primary btn-sm">
+          View Certificate
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
             <!-- IIHT Certification -->
             <div class="card shadow-sm p-4 mb-4">
                 <div class="d-flex align-items-center">
@@ -678,7 +715,7 @@
                          alt="Graduation" width="50" class="me-3">
                     <div>
                         <h5 class="mb-1">B.Tech in Electronics and Communication Engineering</h5>
-                        <small class="text-muted">2020 – 2024</small>
+                        <small class="text-muted">2016 – 2020</small>
                         <p class="mb-0 mt-2">
                             Rajeev Gandhi Memorial College of Engineering and Technology.
                             Graduated with strong foundations in programming, systems, and engineering principles.
@@ -729,6 +766,40 @@
         </div>
     </div>
 </section>
+<section id="achievements" class="container py-5">
+    <h2 class="text-center mb-5">Achievements</h2>
+    <div class="row justify-content-center g-4">
+
+        <!-- GitHub Stats (Dark Theme) -->
+        <div class="col-md-6 text-center">
+            <a href="https://github.com/psaibalaji121" target="_blank">
+                <img src="https://github-readme-stats.vercel.app/api?username=psaibalaji121&show_icons=true&theme=dark&hide_border=true" 
+                     alt="GitHub Stats"
+                     class="stats-card shadow-sm">
+            </a>
+        </div>
+
+        <!-- GitHub Top Languages (Dark Theme) -->
+        <div class="col-md-6 text-center">
+            <a href="https://github.com/psaibalaji121" target="_blank">
+                <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=psaibalaji121&layout=compact&theme=dark&hide_border=true" 
+                     alt="Top Languages"
+                     class="stats-card shadow-sm">
+            </a>
+        </div>
+
+        <!-- LeetCode Stats -->
+        <div class="col-md-12 text-center">
+            <a href="https://leetcode.com/u/psaibalaji121/" target="_blank">
+                <img src="https://leetcard.jacoblin.cool/psaibalaji121?theme=dark&ext=heatmap" 
+                     alt="LeetCode Stats" 
+                     class="stats-card shadow-sm">
+            </a>
+        </div>
+
+    </div>
+</section>
+
 
 
 <section id="contact" class="container my-5">
